@@ -1,7 +1,10 @@
 package ba.unsa.etf.rpr;
 
+import java.util.ArrayList;
+
 public class Predmet implements InterfejsPredstavi {
     private String naziv, opis;
+    private ArrayList<Ocjena> ocjene;
 
     public String getNaziv() {
         return naziv;
@@ -17,6 +20,12 @@ public class Predmet implements InterfejsPredstavi {
 
     public void setOpis(String opis) {
         this.opis = opis;
+    }
+
+    public ArrayList<Ocjena> getOcjene() { return ocjene; }
+
+    public void setOcjene(ArrayList<Ocjena> ocjene) {
+        this.ocjene = ocjene;
     }
 
     @Override
