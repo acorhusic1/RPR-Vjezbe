@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21150e1c-3f11-473d-9c6b-f16f823be2bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/main/java/ba/unsa/etf/rpr/BrojException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/main/java/ba/unsa/etf/rpr/FiksniBroj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/main/java/ba/unsa/etf/rpr/Grad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/main/java/ba/unsa/etf/rpr/Imenik.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/main/java/ba/unsa/etf/rpr/MedunarodniBroj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/main/java/ba/unsa/etf/rpr/MobilniBroj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/main/java/ba/unsa/etf/rpr/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/main/java/ba/unsa/etf/rpr/TelefonskiBroj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpr-t3-z2/src/test/java/ba/unsa/etf/rpr/ImenikTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/rprt6z1/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/rprt6z1/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/rprt6z1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/rprt6z1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ba/unsa/etf/rpr/rprt6z1/digitron.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ba/unsa/etf/rpr/rprt6z1/digitron.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,28 +42,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "ignore.virus.scanning.warn.message": "true",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "CSS"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;CSS&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -108,6 +97,22 @@
       <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.rprt6z1" />
       <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.rprt6z1.MainTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.dotBtn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpr-t6-z1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.rprt6z1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.rprt6z1" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.rprt6z1.MainTest" />
+      <option name="METHOD_NAME" value="dotBtn(org.testfx.api.FxRobot)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,9 +152,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.dotBtn" />
         <item itemvalue="JUnit.MainTest.numberOne" />
         <item itemvalue="JUnit.MainTest.startWithZero" />
-        <item itemvalue="JUnit.MainTest" />
       </list>
     </recent_temporary>
   </component>

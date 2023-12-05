@@ -40,17 +40,17 @@ public class Controller {
     }
 
     @FXML
-    private Label output;
+    private Label display;
 
     @FXML
-    protected void onPlusButtonClick() {
+    protected void plusBtn() {
         if (drugi) {
             a = new StringBuilder("");
             b = new StringBuilder("");
             drugi = false;
         }
         else {
-            output.setText(output.getText() + " + ");
+            display.setText(display.getText() + " + ");
             operator = "+";
             drugi = true;
         }
@@ -63,7 +63,7 @@ public class Controller {
             drugi = false;
         }
         else {
-            output.setText(output.getText() + " - ");
+            display.setText(display.getText() + " - ");
             operator = "-";
             drugi = true;
         }
@@ -76,7 +76,7 @@ public class Controller {
             drugi = false;
         }
         else {
-            output.setText(output.getText() + " * ");
+            display.setText(display.getText() + " * ");
             operator = "*";
             drugi = true;
         }
@@ -89,7 +89,7 @@ public class Controller {
             drugi = false;
         }
         else {
-            output.setText(output.getText() + " / ");
+            display.setText(display.getText() + " / ");
             operator = "/";
             drugi = true;
         }
@@ -102,86 +102,86 @@ public class Controller {
             drugi = false;
         }
         else {
-            output.setText(output.getText() + " % ");
+            display.setText(display.getText() + " % ");
             operator = "%";
             drugi = true;
         }
     }
     @FXML
-    protected void on0ButtonClick() {
-        output.setText(output.getText() + "0");
+    protected void btn0() {
+        display.setText(display.getText() + "0");
         if (drugi)
             b.append("0");
         else
             a.append("0");
     }
     @FXML
-    protected void on1ButtonClick() {
-        output.setText(output.getText() + "1");
+    protected void btn1() {
+        display.setText(display.getText() + "1");
         if (drugi)
             b.append("1");
         else
             a.append("1");
     }
     @FXML
-    protected void on2ButtonClick() {
-        output.setText(output.getText() + "2");
+    protected void btn2() {
+        display.setText(display.getText() + "2");
         if (drugi)
             b.append("2");
         else
             a.append("2");
     }
     @FXML
-    protected void on3ButtonClick() {
-        output.setText(output.getText() + "3");
+    protected void btn3() {
+        display.setText(display.getText() + "3");
         if (drugi)
             b.append("3");
         else
             a.append("3");
     }
     @FXML
-    protected void on4ButtonClick() {
-        output.setText(output.getText() + "4");
+    protected void btn4() {
+        display.setText(display.getText() + "4");
         if (drugi)
             b.append("4");
         else
             a.append("4");
     }
     @FXML
-    protected void on5ButtonClick() {
-        output.setText(output.getText() + "5");
+    protected void btn5() {
+        display.setText(display.getText() + "5");
         if (drugi)
             b.append("5");
         else
             a.append("5");
     }
     @FXML
-    protected void on6ButtonClick() {
-        output.setText(output.getText() + "6");
+    protected void btn6() {
+        display.setText(display.getText() + "6");
         if (drugi)
             b.append("6");
         else
             a.append("6");
     }
     @FXML
-    protected void on7ButtonClick() {
-        output.setText(output.getText() + "7");
+    protected void btn7() {
+        display.setText(display.getText() + "7");
         if (drugi)
             b.append("7");
         else
             a.append("7");
     }
     @FXML
-    protected void on8ButtonClick() {
-        output.setText(output.getText() + "8");
+    protected void btn8() {
+        display.setText(display.getText() + "8");
         if (drugi)
             b.append("8");
         else
             a.append("8");
     }
     @FXML
-    protected void on9ButtonClick() {
-        output.setText(output.getText() + "9");
+    protected void btn9() {
+        display.setText(display.getText() + "9");
         if (drugi)
             b.append("9");
         else
@@ -190,16 +190,16 @@ public class Controller {
     @FXML
     protected void onEqualsButtonClick() {
         String rez = calculate();
-        if (rez.equals("DN")) output.setText("DivByZero");
-        else if (rez.equals("IO")) output.setText("InvOperator");
-        else output.setText(rez);
+        if (rez.equals("DN")) display.setText("DivByZero");
+        else if (rez.equals("IO")) display.setText("InvOperator");
+        else display.setText(rez);
         a = new StringBuilder(rez);
         b = new StringBuilder("");
         drugi = false;
     }
     @FXML
-    protected void onDotButtonClick() {
-        output.setText(output.getText() + ".");
+    protected void dotBtn() {
+        display.setText(display.getText() + ".");
         if(drugi)
             b.append(".");
         else

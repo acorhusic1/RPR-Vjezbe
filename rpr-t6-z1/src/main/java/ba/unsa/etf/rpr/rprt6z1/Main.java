@@ -12,7 +12,7 @@ public class Main extends Application {
         @Override
         public void start(Stage stage) throws IOException {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("digitron.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(),240, 240);
+            Scene scene = new Scene(fxmlLoader.load(),200, 240);
             stage.setTitle("Digitron");
             stage.setScene(scene);
             stage.show();
