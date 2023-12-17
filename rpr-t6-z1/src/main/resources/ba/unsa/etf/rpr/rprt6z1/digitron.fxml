@@ -3,14 +3,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane alignment="CENTER" prefWidth="240" prefHeight="240" vgap="5" hgap="5" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.rprt6z1.Controller">
+<GridPane alignment="CENTER" hgap="5" maxWidth="1.7976931348623157E308" prefHeight="240" prefWidth="240" vgap="5" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.rprt6z1.Controller">
 
     <columnConstraints>
         <ColumnConstraints hgrow="ALWAYS" />
         <ColumnConstraints hgrow="ALWAYS" />
         <ColumnConstraints hgrow="ALWAYS" />
         <ColumnConstraints hgrow="ALWAYS" />
-        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="ALWAYS" />
     </columnConstraints>
     <rowConstraints>
         <RowConstraints vgrow="ALWAYS" />
@@ -23,98 +23,98 @@
 
     <VBox GridPane.columnSpan="4" GridPane.rowIndex="0">
         <AnchorPane prefWidth="135">
-            <Label fx:id="display" style="-fx-background-color: lightgreen;" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Label fx:id="display" prefHeight="18.0" prefWidth="240.0" style="-fx-background-color: lightgreen;" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="-24.0" AnchorPane.topAnchor="0" />
         </AnchorPane>
     </VBox>
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#onPctButtonClick" text="\%" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" />
+            <Button layoutX="11.0" layoutY="1.0" onAction="#onPctButtonClick" text="\%" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="1.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#onDivButtonClick"  text="/" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" onAction="#onDivButtonClick" text="/" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="2" GridPane.rowIndex="1" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#onMulButtonClick"  text="*" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" onAction="#onMulButtonClick" text="*" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="3" GridPane.rowIndex="1" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#onMinusButtonClick"  text="-" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" layoutY="1.0" onAction="#onMinusButtonClick" text="-" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="1.0" />
         </AnchorPane>
     </VBox>
 
-    <VBox GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2">
         <AnchorPane prefHeight="65" prefWidth="30">
-            <Button onAction="#plusBtn" text="+" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" onAction="#plusBtn" text="+" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2">
         <AnchorPane prefHeight="65" prefWidth="30">
-            <Button onAction="#onEqualsButtonClick" text="=" style="-fx-background-color: #FF93A0" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" onAction="#onEqualsButtonClick" style="-fx-background-color: #FF93A0" text="=" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
         </AnchorPane>
     </VBox>
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn7" text="7" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" onAction="#btn7" text="7" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="1" GridPane.rowIndex="2" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn8" text="8" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" layoutY="1.0" onAction="#btn8" text="8" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="1.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="2" GridPane.rowIndex="2" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn9" text="9" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
-        </AnchorPane>
-    </VBox>
-
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER">
-        <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn4" text="4" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
-        </AnchorPane>
-    </VBox>
-    <VBox GridPane.columnIndex="1" GridPane.rowIndex="3" alignment="CENTER">
-        <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn5" text="5" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
-        </AnchorPane>
-    </VBox>
-    <VBox GridPane.columnIndex="2" GridPane.rowIndex="3" alignment="CENTER">
-        <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn6" text="6" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" onAction="#btn9" text="9" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
         </AnchorPane>
     </VBox>
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="4" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn1" text="1" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" onAction="#btn4" text="4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="1" GridPane.rowIndex="4" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn2" text="2" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" layoutY="1.0" onAction="#btn5" text="5" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="1.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="2" GridPane.rowIndex="4" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#btn3" text="3" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" layoutY="-1.0" onAction="#btn6" text="6" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="-1.0" />
         </AnchorPane>
     </VBox>
 
-    <VBox GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="5" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <AnchorPane prefHeight="30" prefWidth="30">
+            <Button layoutX="11.0" onAction="#btn1" text="1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
+        </AnchorPane>
+    </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <AnchorPane prefHeight="30" prefWidth="30">
+            <Button layoutX="11.0" layoutY="1.0" onAction="#btn2" text="2" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="1.0" />
+        </AnchorPane>
+    </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <AnchorPane prefHeight="30" prefWidth="30">
+            <Button layoutX="11.0" layoutY="1.0" onAction="#btn3" text="3" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="1.0" />
+        </AnchorPane>
+    </VBox>
+
+    <VBox alignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="5">
         <AnchorPane prefHeight="30" prefWidth="65">
-            <Button onAction="#btn0"  text="0"  AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="14.0" layoutY="1.0" onAction="#btn0" text="0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="1.0" />
         </AnchorPane>
     </VBox>
-    <VBox GridPane.columnIndex="2" GridPane.rowIndex="5" alignment="CENTER">
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
         <AnchorPane prefHeight="30" prefWidth="30">
-            <Button onAction="#dotBtn" text="." AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            <Button layoutX="11.0" layoutY="1.0" onAction="#dotBtn" text="." AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="1.0" />
         </AnchorPane>
     </VBox>
 
