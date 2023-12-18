@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.rprt7z1.Controller">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <children>
+    <GridPane>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="126.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="121.0" />
+        <ColumnConstraints maxWidth="165.0" minWidth="124.0" prefWidth="124.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="50.0" minHeight="30.0" prefHeight="37.0" />
+        <RowConstraints maxHeight="40.0" minHeight="33.0" prefHeight="40.0" />
+        <RowConstraints />
+      </rowConstraints>
+      <children>
+        <ListView fx:id="fldLista" prefHeight="200.0" prefWidth="200.0" GridPane.rowSpan="5" />
+        <Label text="Ime:" GridPane.columnIndex="1">
+          <padding>
+            <Insets left="7.0" />
+          </padding>
+        </Label>
+        <TextField fx:id="fldIme" GridPane.columnIndex="2" />
+        <Label text="Prezime:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <padding>
+            <Insets left="7.0" />
+          </padding>
+        </Label>
+        <TextField fx:id="fldPrezime" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Label text="E-mail:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <padding>
+            <Insets left="7.0" />
+          </padding>
+        </Label>
+        <TextField fx:id="fldEmail" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Label text="Korisničko ime:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+          <padding>
+            <Insets left="7.0" />
+          </padding>
+        </Label>
+        <TextField fx:id="fldKorisnickoIme" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label text="Lozinka:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+          <padding>
+            <Insets left="7.0" />
+          </padding>
+        </Label>
+        <TextField fx:id="fldLozinka" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+          <buttons>
+            <Button mnemonicParsing="false" onAction="#btnDodaj" text="Dodaj" />
+            <Button mnemonicParsing="false" onAction="#btnKraj" text="Kraj" />
+          </buttons>
+        </ButtonBar>
+      </children>
+    </GridPane>
+  </children>
+</VBox>
