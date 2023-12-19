@@ -81,6 +81,6 @@ public class Korisnik implements Serializable {
 
     @Override
     public String toString() {
-        return getIme() + getPrezime();
+        return getIme() + " " +  getPrezime();
     }
 }

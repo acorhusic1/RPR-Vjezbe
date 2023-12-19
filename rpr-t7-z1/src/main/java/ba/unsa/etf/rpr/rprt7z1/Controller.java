@@ -1,35 +1,64 @@
 package ba.unsa.etf.rpr.rprt7z1;
 
-import javafx.collections.ObservableList;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 
 public class Controller {
-    KorisniciModel model = new KorisniciModel();
+    @FXML
+    private KorisniciModel model = new KorisniciModel();
     @FXML
     private ListView<Korisnik> fldLista = new ListView<>();
     @FXML
-    private TextField fldIme, fldPrezime, fldEmail, fldKorisnickoIme, fldLozinka;
+    private TextField fldIme, fldPrezime, fldEmail, fldKorisnickoIme;
+    @FXML
+    private PasswordField fldLozinka;
 
     @FXML
     public void initialize() {
+        fldIme.textProperty().bindBidirectional(model.getTrenutniKorisnik().imeProperty());
         fldLista.setItems(model.getKorisnici());
 
-        fldIme.textProperty().bindBidirectional(model.getTrenutniKorisnik().imeProperty());
-        fldPrezime.textProperty().bindBidirectional(model.getTrenutniKorisnik().prezimeProperty());
-        fldEmail.textProperty().bindBidirectional(model.getTrenutniKorisnik().emailProperty());
-        fldKorisnickoIme.textProperty().bindBidirectional(model.getTrenutniKorisnik().korisnickoImeProperty());
-        fldLozinka.textProperty().bindBidirectional(model.getTrenutniKorisnik().lozinkaProperty());
+        fldLista.getSelectionModel().selectedItemProperty().addListener(
+                (obs, oldSelection, newSelection) -> model.setTrenutniKorisnik(newSelection)
+        );
 
-        fldLista.getSelectionModel().selectedItemProperty().addListener((obs, stari, novi) -> {
-            model.setTrenutniKorisnik(novi);
-            fldLista.refresh();
-        });
+        model.trenutniKorisnikProperty().addListener(
+                (obs, prev, next) -> {
+                    if (prev != null) {
+                        fldIme.textProperty().unbindBidirectional(prev.imeProperty());
+                        fldPrezime.textProperty().unbindBidirectional(prev.prezimeProperty());
+                        fldEmail.textProperty().unbindBidirectional(prev.emailProperty());
+                        fldLozinka.textProperty().unbindBidirectional(prev.lozinkaProperty());
+                        fldKorisnickoIme.textProperty().unbindBidirectional(prev.korisnickoImeProperty());
+                    }
+                    if (next != null) {
+                        fldIme.textProperty().bindBidirectional(next.imeProperty());
+                        fldPrezime.textProperty().bindBidirectional(next.prezimeProperty());
+                        fldEmail.textProperty().bindBidirectional(next.emailProperty());
+                        fldLozinka.textProperty().bindBidirectional(next.lozinkaProperty());
+                        fldKorisnickoIme.textProperty().bindBidirectional(next.korisnickoImeProperty());
+                    } else {
+                        fldIme.setText("");
+                        fldPrezime.setText("");
+                        fldEmail.setText("");
+                        fldLozinka.setText("");
+                        fldKorisnickoIme.setText("");
+                    }
+                    fldLista.refresh();
+                }
+        );
+
+        fldLista.getSelectionModel().selectedItemProperty().addListener(
+                (obs, oldKorisnik, newKorisnik) -> {
+                    model.setTrenutniKorisnik(newKorisnik);
+                    fldLista.refresh();
+                });
+
+        model.napuni();
     }
 
     @FXML
@@ -38,22 +67,16 @@ public class Controller {
             System.out.println("Niste popunili sva polja forme!");
             return;
         }
-        System.out.println(model.getTrenutniKorisnik().getIme() + " + " + model.getTrenutniKorisnik().getPrezime());
 
-    //    Korisnik noviKorisnik = new Korisnik(fldIme.getText(), fldPrezime.getText(), fldEmail.getText(), fldKorisnickoIme.getText(), fldLozinka.getText());
         fldLista.getSelectionModel().select(model.getTrenutniKorisnik());
-        model.napuni();
-        /*
-        fldIme.clear();
-        fldPrezime.clear();
-        fldEmail.clear();
-        fldKorisnickoIme.clear();
-        fldLozinka.clear();
-        */
+        model.add(new Korisnik());
+        fldLista.refresh();
+        fldLista.getSelectionModel().select(model.getTrenutniKorisnik());
     }
 
     @FXML
     public void btnKraj(ActionEvent actionEvent) {
         System.exit(0);
     }
+
 }

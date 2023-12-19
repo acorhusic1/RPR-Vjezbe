@@ -54,7 +54,7 @@
             <Insets left="7.0" />
           </padding>
         </Label>
-        <TextField fx:id="fldLozinka" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <PasswordField fx:id="fldLozinka" GridPane.columnIndex="2" GridPane.rowIndex="4" />
         <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
           <buttons>
             <Button mnemonicParsing="false" onAction="#btnDodaj" text="Dodaj" />
