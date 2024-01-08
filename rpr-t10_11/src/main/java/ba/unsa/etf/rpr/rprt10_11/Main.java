@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("drzava.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("glavna.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 480, 240);
         stage.setTitle("Gradovi svijeta");
         stage.setScene(scene);
