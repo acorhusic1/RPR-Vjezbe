@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="128.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.rprt10_11.DrzavaController">
+   <children>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="18.0" prefWidth="77.0" text="Naziv:           " />
+            <TextField fx:id="fieldNaziv">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label text="Glavni grad:    " />
+            <ChoiceBox fx:id="choiceGrad" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <ButtonBar>
+        <buttons>
+            <Button fx:id="btnOk" mnemonicParsing="false" text="Ok" />
+          <Button fx:id="btnCancel" mnemonicParsing="false" text="Cancel" />
+        </buttons>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin>
+      </ButtonBar>
+   </children>
+</VBox>
